@@ -1,5 +1,7 @@
 package com.petcare.web.controller;
 
+
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +12,6 @@ public class ExamController {
 
     @GetMapping("/hi")
     public String hi() {
-        return "홍창용님 안녕안녕안녕하세요.";
+        return "홍창용님 안녕하세요.";
     }
 }
