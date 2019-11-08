@@ -10,6 +10,6 @@ public class ExamController {
 
     @GetMapping("/hi")
     public String hi() {
-        return "홍창용님 안녕하세요.";
+        return "홍창용님 안녕히계세요..";
     }
 }
