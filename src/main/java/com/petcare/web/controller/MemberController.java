@@ -22,7 +22,7 @@ public class MemberController {
         return "loginForm";
     }
 
-    @PostMapping
+    @PostMapping("/loginProcess")
     public String loginProcess(@ModelAttribute Member member, Model model) {
         model.addAttribute("member", memberService.getMember(member));
         return "redirect:/index";
