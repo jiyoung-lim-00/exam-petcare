@@ -9,7 +9,7 @@
 <%@ include file="includes/header.jsp"%>
 
 <c:choose>
-    <c:when test="${sessionScope.username}">
+    <c:when test="${not empty sessionScope.username}">
        <h1>${sessionScope.username} 님 환영합니다.</h1>
     </c:when>
     <c:otherwise>
@@ -17,4 +17,4 @@
     </c:otherwise>
 </c:choose>
 
-<%@ include file="includes/foorter.jsp"%>
+<%@ include file="includes/footer.jsp"%>

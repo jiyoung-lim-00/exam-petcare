@@ -24,8 +24,14 @@ public class MemberController {
 
     @PostMapping("/loginProcess")
     public String loginProcess(@ModelAttribute Member member, Model model) {
-        model.addAttribute("member", memberService.getMember(member));
-        return "redirect:/index";
+        Member saved = memberService.getMember(member);
+        if(saved != null) {
+            model.addAttribute("member", saved);
+            return "redirect:/index";
+        }
+
+        return "redirect:/loginForm";
+
     }
 
 }
