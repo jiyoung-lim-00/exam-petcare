@@ -1,5 +1,6 @@
 package com.petcare.web.config;
 
+import com.petcare.web.interceptor.LoginInterceptor;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -28,5 +29,6 @@ public class ServletConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new SampleInterceptor());
+        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/loginProcess");
     }
 }

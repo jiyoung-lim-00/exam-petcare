@@ -7,7 +7,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="includes/header.jsp"%>
+<<<<<<< HEAD
 <link rel="stylesheet" href="resources/css/main.css"/>
+=======
+
+>>>>>>> 398dbaef2edc716af8e86ae00b2d14808290c137
 <c:choose>
     <c:when test="${not empty sessionScope.username}">
        <h1>${sessionScope.username} 님 환영합니다.</h1>
@@ -17,6 +21,9 @@
     </c:otherwise>
 </c:choose>
 
+<<<<<<< HEAD
 <h1> 안녕하세요. </h1>
 
+=======
+>>>>>>> 398dbaef2edc716af8e86ae00b2d14808290c137
 <%@ include file="includes/footer.jsp"%>
