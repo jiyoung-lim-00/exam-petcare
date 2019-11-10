@@ -142,6 +142,15 @@
             <version>2.8.5</version>
         </dependency>
 
+        <!-- 풀캘린더 -->
+        <!-- https://mvnrepository.com/artifact/org.webjars.npm/fullcalendar -->
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>fullcalendar</artifactId>
+            <version>3.10.0</version>
+        </dependency>
+
+
     </dependencies>
         <build>
         <finalName>petcare-b</finalName>
