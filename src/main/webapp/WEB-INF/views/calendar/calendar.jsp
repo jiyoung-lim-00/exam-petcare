@@ -14,6 +14,9 @@
 <script src='/resources/fullcalendar/core/main.js'></script>
 <script src='/resources/fullcalendar/daygrid/main.js'></script>
 <script src='/resources/fullcalendar/timegrid/main.js'></script>
+<script src='/resources/fullcalendar/interaction/main.js'></script>
+
+
 
 <div class="container calendar-container">
     <div id="calendar" style="color: white"></div>
