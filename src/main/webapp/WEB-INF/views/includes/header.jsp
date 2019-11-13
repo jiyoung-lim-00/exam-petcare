@@ -61,8 +61,8 @@
 						</li>
 						<li class="menu-btn">
 							<c:choose>
-								<c:when test="${not empty sessionScope.username}">
-									${sessionScope.username}
+								<c:when test="${not empty sessionScope.member}">
+									${sessionScope.member.username}
 									<a href="/logout" class="template-btn">logout</a>
 								</c:when>
 								<c:otherwise>

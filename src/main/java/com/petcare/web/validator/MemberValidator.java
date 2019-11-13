@@ -21,7 +21,7 @@ public class MemberValidator implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
         Member newMember = (Member) target;
-        Member savedMember = memberService.getMember(newMember.getUsername());
+        Member savedMember = memberService.getMemberWithUsername(newMember.getUsername());
 
         if(savedMember != null) {
             errors.rejectValue("username","duplicateUsername","이미 존재하는 유저이름입니다.");

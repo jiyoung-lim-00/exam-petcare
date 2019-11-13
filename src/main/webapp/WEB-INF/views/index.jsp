@@ -12,8 +12,8 @@
 <section class="container">
     <div class="row">
         <c:choose>
-            <c:when test="${not empty sessionScope.username}">
-                <h1>${sessionScope.username} 님 환영합니다.</h1>
+            <c:when test="${not empty sessionScope.member}">
+                <h1>${sessionScope.member.username} 님 환영합니다.</h1>
             </c:when>
             <c:otherwise>
                 <h1>로그인해주세요.</h1>

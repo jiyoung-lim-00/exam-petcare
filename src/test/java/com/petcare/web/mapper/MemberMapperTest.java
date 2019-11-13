@@ -30,7 +30,7 @@ public class MemberMapperTest {
 
         Member member = new Member(username, password);
 
-        Member saved = memberMapper.getMember(member.getUsername());
+        Member saved = memberMapper.findByUsername(member.getUsername());
 
         log.debug(saved.toString());
         assertThat(saved.getUsername(), is(username));

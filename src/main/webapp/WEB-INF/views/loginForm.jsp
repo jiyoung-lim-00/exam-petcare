@@ -15,8 +15,6 @@
             <form:errors path="username"/>
             비밀번호 : <form:input path="password"/>
             <form:errors path="password"/>
-            이메일 : <form:input path="email"/>
-            <form:errors path="email"/>
             <button type="submit">로그인</button>
         </form:form>
     </div>

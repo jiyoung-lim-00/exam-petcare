@@ -38,8 +38,8 @@ public class MemberController {
 
     @PostMapping("/loginProcess")
     public String loginProcess(@ModelAttribute Member member, Model model) {
-        Member saved = memberService.getMember(member.getUsername());
-        if(saved != null) {
+        Member saved = memberService.getCorrectMember(member);
+        if (saved != null) {
             model.addAttribute("member", saved);
             return "redirect:/index";
         }
@@ -60,11 +60,11 @@ public class MemberController {
 
     @PostMapping("/signupForm")
     public String signupProcess(@Valid @ModelAttribute Member member, BindingResult bindingResult) {
-        log.debug(member.toString());
-        if(bindingResult.hasErrors()) {
+        if (bindingResult.hasErrors()) {
             bindingResult.getAllErrors().stream().map(e -> toString()).forEach(log::debug);
             return "signupForm";
         }
+        memberService.insertMember(member);
         return "index";
     }
 
