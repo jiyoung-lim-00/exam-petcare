@@ -61,8 +61,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     calendar.render();
-
-    const newEvent = function() {
-        calendar.addEvent()
-    }
 });
