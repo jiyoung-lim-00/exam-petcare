@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay'
         },
+        locale: 'ko',
         events: [
             {
                 title: 'All Day Event',
@@ -60,4 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     calendar.render();
+
+    const newEvent = function() {
+        calendar.addEvent()
+    }
 });
