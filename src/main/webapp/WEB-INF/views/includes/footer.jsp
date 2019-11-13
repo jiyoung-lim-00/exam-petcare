@@ -1,3 +1,4 @@
+
 <%--
   Created by IntelliJ IDEA.
   User: govlmo91
@@ -19,4 +20,3 @@
 <script src="resources/js/main.js"></script>
 </body>
 </html>
-

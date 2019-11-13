@@ -5,6 +5,5 @@
         select *
         from springpractice.test_member tm
         where username = #{username}
-          and password = #{password}
     </select>
 </mapper>

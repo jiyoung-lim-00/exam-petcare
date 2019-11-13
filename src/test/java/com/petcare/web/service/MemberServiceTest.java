@@ -29,7 +29,7 @@ public class MemberServiceTest {
     @Test
     public void getMember_test() {
         Member member = new Member("govlmo91","1234");
-        Member saved = memberService.getMember(member);
+        Member saved = memberService.getMember(member.getUsername());
 
         assertThat(saved, is(notNullValue()));
     }

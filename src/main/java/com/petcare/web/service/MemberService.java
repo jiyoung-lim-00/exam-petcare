@@ -11,7 +11,7 @@ public class MemberService {
     @Autowired
     private MemberMapper memberMapper;
 
-    public Member getMember(Member member) {
-        return memberMapper.getMember(member);
+    public Member getMember(String username) {
+        return memberMapper.getMember(username);
     }
 }
