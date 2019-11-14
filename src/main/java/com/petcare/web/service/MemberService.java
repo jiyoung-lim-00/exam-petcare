@@ -11,7 +11,15 @@ public class MemberService {
     @Autowired
     private MemberMapper memberMapper;
 
-    public Member getMember(Member member) {
-        return memberMapper.getMember(member);
+    public Member getCorrectMember(Member member) {
+        return memberMapper.findCorrectUser(member);
+    }
+
+    public Member getMemberWithUsername(String username) {
+        return memberMapper.findByUsername(username);
+    }
+
+    public void insertMember(Member member) {
+        memberMapper.insertMember(member);
     }
 }

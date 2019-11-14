@@ -65,4 +65,12 @@ public class MemberControllerTest {
                 .andExpect(status().is3xxRedirection())
                 .andExpect(request().sessionAttribute("username", "govlmo91"));
     }
+
+    @Test
+    public void logoutTest() throws Exception {
+        mockMvc.perform(get("/logout")
+                    .sessionAttr("username", "govlmo91"))
+                .andDo(print())
+                .andExpect(status().is3xxRedirection());
+    }
 }

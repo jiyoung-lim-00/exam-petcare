@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
@@ -15,6 +16,7 @@ import static org.junit.Assert.*;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {RootConfig.class})
 @Slf4j
+@WebAppConfiguration
 public class MemberMapperTest {
 
     @Autowired
@@ -28,7 +30,7 @@ public class MemberMapperTest {
 
         Member member = new Member(username, password);
 
-        Member saved = memberMapper.getMember(member);
+        Member saved = memberMapper.findByUsername(member.getUsername());
 
         log.debug(saved.toString());
         assertThat(saved.getUsername(), is(username));
