@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const calendar = new FullCalendar.Calendar(calendarEl, {
         plugins: ['interaction', 'dayGrid', 'timeGrid'],
         selectable: true,
+        editable: true,
         defaultView: 'dayGridMonth',
         header: {
             left: 'prev,next today',
@@ -31,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
         events: {
             url: '/calendar-exam',
             method : 'POST'
+        },
+        eventClick(arg) {
+            console.log(arg.event);
         }
     });
 
