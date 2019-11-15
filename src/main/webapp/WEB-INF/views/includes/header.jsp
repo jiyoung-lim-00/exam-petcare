@@ -53,8 +53,8 @@
 						<li><a href="contact-us.html">contact</a></li>
 						<li><a href="#">pages</a>
 							<ul class="sub-menu">
-								<li><a href="job-search.html">Job Search</a></li>
-								<li><a href="/calendar">캘린더</a></li>
+								<li><a href="/reservationForm">예약추가</a></li>
+								<li><a href="/calendar">예약확인캘린더</a></li>
 								<li><a href="/formTest">form테스트</a></li>
 								<li><a href="/event/form">스프링밸리데이터적용 이벤트</a></li>
 							</ul>
