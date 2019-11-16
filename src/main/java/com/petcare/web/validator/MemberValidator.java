@@ -25,6 +25,7 @@ public class MemberValidator implements Validator {
 
         if(savedMember != null) {
             errors.rejectValue("username","duplicateUsername","이미 존재하는 유저이름입니다.");
+            
         }
     }
 }
