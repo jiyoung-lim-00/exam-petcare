@@ -1,12 +1,6 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
-    const getEvent = () => {
-        console.log('getEvent');
-        $.ajax({
-            url: '/calendar-exam',
-            dataType: 'json',
-            method: 'POST',
-        })
-    };
 
 
     const addBtnContainer = $('.modalBtnContainer-addEvent');
@@ -29,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
             eventModal.modal('show');
             console.log(info.startStr);
         },
+        timeZone : 'Asia/Seoul',
+        allDayDefault : false,
         events: {
             url: '/calendar-exam',
             method : 'POST'
