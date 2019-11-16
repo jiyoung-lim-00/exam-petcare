@@ -4,8 +4,9 @@
 - domain/Resercation.java
 - webapp/resources/fullcalendar
 - webapp/resources/js/calendar-main.js
+- webapp/WEB-INF/views/calendar/calendar.jsp
 
-## DATABASE`
+## DATABASE
 ``````
 |----|---------|---------|
 |uid |username |password |
