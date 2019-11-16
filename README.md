@@ -1,3 +1,10 @@
+## fullcalendar
+봐야할 것
+- controller/CalendarController.java
+- domain/Resercation.java
+- webapp/resources/fullcalendar
+- webapp/resources/js/calendar-main.js
+
 ## DATABASE`
 ``````
 |----|---------|---------|
